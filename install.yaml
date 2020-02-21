@@ -15,4 +15,4 @@
         - elinks
         - unzip
         - wget
-        state: latest
+        state: present
