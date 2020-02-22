@@ -5,13 +5,20 @@
   become_method: sudo
   connection: ssh
   tasks:
-  - name: add user
-    user:
-    - name: bob
-      state: present
-    - name: ben
-      state: present
-    - name: lisa
-      state: present
-    - name: katty
-      state: present
+    - name: add bob
+      user:
+        name: bob
+        state: present
+    - name: add ben
+      user:
+        name: ben
+        state: present
+    - name: add lisa
+      user:
+        name: lisa
+        state: present
+    - name: add katy
+      user:
+        name: katty
+        state: present
+        
