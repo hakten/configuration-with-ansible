@@ -23,6 +23,9 @@
         state: present
 - name: Install webserver
   hosts: all
+  become: true
+  become_method: sudo
+  connection: ssh
   tasks:
     - name: Install httpd
       package: 
