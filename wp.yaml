@@ -1,0 +1,20 @@
+---
+- name: add multiple users
+  hosts: all
+  tasks:
+    - name: add bob
+      user:
+        name: bob
+        state: present
+    - name: add bob
+      user:
+        name: ben
+        state: present
+    - name: add bob
+      user:
+        name: lisa
+        state: present
+    - name: add bob
+      user:
+        name: katty
+        state: present

@@ -1,0 +1,10 @@
+Create a playbook that installs wordpress on 1 of the instances out of all instances you have on AWS. 
+It should install all the necessary packages of wordpress including mysql/mariadb. 
+The playbook should also add the following users to a system
+Bob 
+ben 
+lisa
+katty
+with ssh keys generated automatically
+Playbook should start wordpress and create route53 record automatically for:
+wordpress.yourdomain.com. Once the tasks completed send a link to your wordpress in a group.
