@@ -21,4 +21,19 @@
       user:
         name: katty
         state: present
-        
+---
+- name: Install webserver
+  hosts: all
+  tasks:
+    - name: Install httpd
+      package: 
+        name: httpd
+        state: present
+    - name: Install PHP
+      package:
+        name: php
+        state: latest
+    - name: Create index.html file
+      copy:
+        content: Hello world
+        dest:  /var/www/html/index.html
