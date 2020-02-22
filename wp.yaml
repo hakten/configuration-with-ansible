@@ -5,7 +5,7 @@
   become_method: sudo
   connection: ssh
   tasks:
-    - name: add bob
+    - name: add user
       user:
       - name: bob
         state: present
