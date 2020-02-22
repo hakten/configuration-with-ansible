@@ -39,3 +39,8 @@
       copy:
         content: Hello world
         dest:  /var/www/html/index.html
+    - name: Start webserver
+      systemd:
+        name: httpd
+        state: started
+        enabled: yes
