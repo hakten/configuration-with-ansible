@@ -21,8 +21,6 @@
       user:
         name: katty
         state: present
-        
----
 - name: Install webserver
   hosts: all
   tasks:
