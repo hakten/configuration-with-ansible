@@ -7,17 +7,11 @@
   tasks:
     - name: add bob
       user:
-        name: bob
+      - name: bob
         state: present
-    - name: add ben
-      user:
-        name: ben
+      - name: ben
         state: present
-    - name: add lisa
-      user:
-        name: lisa
+      - name: lisa
         state: present
-    - name: add katty
-      user:
-        name: katty
+      - name: katty
         state: present
