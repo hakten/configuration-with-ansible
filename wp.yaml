@@ -9,15 +9,15 @@
       user:
         name: bob
         state: present
-    - name: add bob
+    - name: add ben
       user:
         name: ben
         state: present
-    - name: add bob
+    - name: add lisa
       user:
         name: lisa
         state: present
-    - name: add bob
+    - name: add katty
       user:
         name: katty
         state: present
