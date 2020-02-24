@@ -45,7 +45,7 @@
         state: started
         enabled: yes
 - name: Create Route53     
-  hosts: worker1.huseyinakten.net
+  # hosts: worker1.huseyinakten.net
   - route53:
       state: present
       zone: ZLLTFA4ZO6PR5
