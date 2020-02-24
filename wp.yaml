@@ -1,49 +1,49 @@
----
-- name: add multiple users
-  hosts: all
-  become: true
-  become_method: sudo
-  connection: ssh
-  tasks:
-    - name: add bob
-      user:
-        name: bob
-        state: present
-    - name: add ben
-      user:
-        name: ben
-        state: present
-    - name: add lisa
-      user:
-        name: lisa
-        state: present
-    - name: add katy
-      user:
-        name: katty
-        state: present
-- name: Install webserver
-  hosts: worker1.huseyinakten.net
-  become: true
-  become_method: sudo
-  connection: ssh
-  tasks:
-    - name: Install httpd
-      package: 
-        name: httpd
-        state: present
-    - name: Install PHP
-      package:
-        name: php
-        state: latest
-    - name: Create index.html file
-      copy:
-        content: Hello world
-        dest:  /var/www/html/index.html
-    - name: Start webserver
-      systemd:
-        name: httpd
-        state: started
-        enabled: yes
+# ---
+# - name: add multiple users
+#   hosts: all
+#   become: true
+#   become_method: sudo
+#   connection: ssh
+#   tasks:
+#     - name: add bob
+#       user:
+#         name: bob
+#         state: present
+#     - name: add ben
+#       user:
+#         name: ben
+#         state: present
+#     - name: add lisa
+#       user:
+#         name: lisa
+#         state: present
+#     - name: add katy
+#       user:
+#         name: katty
+#         state: present
+# - name: Install webserver
+#   hosts: worker1.huseyinakten.net
+#   become: true
+#   become_method: sudo
+#   connection: ssh
+#   tasks:
+#     - name: Install httpd
+#       package: 
+#         name: httpd
+#         state: present
+#     - name: Install PHP
+#       package:
+#         name: php
+#         state: latest
+#     - name: Create index.html file
+#       copy:
+#         content: Hello world
+#         dest:  /var/www/html/index.html
+#     - name: Start webserver
+#       systemd:
+#         name: httpd
+#         state: started
+#         enabled: yes
 - name: Create Route53     
   hosts: localhost
   become: true
