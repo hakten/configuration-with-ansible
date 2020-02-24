@@ -51,7 +51,7 @@
   tasks:
   - route53:
       state: present
-      zone: 'ZLLTFA4ZO6PR5'
+      zone: 'huseyinakten.net'
       record: wp.huseyinakten.net
       type: A
       ttl: 7200
