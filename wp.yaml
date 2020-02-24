@@ -45,10 +45,9 @@
         state: started
         enabled: yes
 - name: Create Route53     
-  hosts: worker1.huseyinakten.net
+  hosts: localhost
   become: true
   become_method: sudo
-  connection: ssh
   tasks:
   - route53:
       state: present
