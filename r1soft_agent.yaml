@@ -21,7 +21,7 @@
         name: firewalld
         state: stopped
       ignore_errors: true
-      
+
     - name: Get Key
       shell: r1soft-setup --get-key http://backup.huseyinakten.net
 
@@ -29,3 +29,4 @@
       systemd:
         name: sbm-agent
         state: restarted
+        enabled: yes
