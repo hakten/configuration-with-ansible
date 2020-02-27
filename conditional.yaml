@@ -14,5 +14,7 @@
 
 
     - name: Restart
-      when: (ansible_facts['distribution'] == "CentOS" and ansible_facts['distribution_major_version'] == "6")
+      when: 
+      - ansible_facts['distribution'] == "CentOS"
+      - ansible_facts['distribution_major_version'] == "6")
       shell: "/sbin/shutdown -r now"
