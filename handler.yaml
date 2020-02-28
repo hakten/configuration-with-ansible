@@ -16,7 +16,7 @@
       package:
         name: mariadb-server
         state: present
-      notify: MYSQL RESTART
+    notify: MYSQL RESTART
 
   handlers:
     - name: HTTPD RESTART
