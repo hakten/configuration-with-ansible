@@ -1,5 +1,5 @@
 ---
-- name: Test Playbook
+- name: Handler
   hosts: all
   become: true
   become_method: sudo
@@ -26,5 +26,5 @@
 
     - name: MYSQL RESTART
       systemd:
-        name: mysqld
+        name: mariadb
         state: restarted
