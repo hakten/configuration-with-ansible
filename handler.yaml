@@ -23,7 +23,7 @@
       systemd:
         name: httpd
         state: restarted
-  handlers:
+
     - name: MYSQL RESTART
       systemd:
         name: mysqld
