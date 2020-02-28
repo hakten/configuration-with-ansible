@@ -7,6 +7,4 @@
   ignore_errors: false
   tasks:
   roles:
-  - {role: company1}
-  - {role: company2}
-  - {role: company3}
+  - {role: company_prerequisites}
