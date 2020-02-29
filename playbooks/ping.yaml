@@ -1,6 +1,6 @@
 ---
 - name: Test Playbook
-  hosts: "{{HOSTS}}"
+  hosts: "{{hosts}}"
   become: true
   become_method: sudo
   connection: ssh
