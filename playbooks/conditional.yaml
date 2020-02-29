@@ -12,7 +12,6 @@
         name: kernel
         state: latest
 
-
     - name: Restart
       when: 
       - ansible_facts['distribution'] == "CentOS"
