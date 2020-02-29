@@ -1,6 +1,6 @@
 ---
 - name: Test Playbook
-  hosts: all
+  hosts: web
   become: true
   become_method: sudo
   connection: ssh
