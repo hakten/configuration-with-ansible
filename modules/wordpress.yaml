@@ -1,5 +1,5 @@
 ---
-- name: Company Prerequisities
+- name: Wordpress
   hosts: all
   become: true
   become_method: sudo
@@ -7,4 +7,4 @@
   ignore_errors: false
   tasks:
   roles:
-  - role: company_prerequisites
+  - role: wordpress
